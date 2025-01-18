@@ -13,11 +13,8 @@ h1 {
     color: steelblue;
 }
 
-main{ 
-    max-width: 840px;
-}
-
 main img {
+    max-width: 840px;
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
@@ -25,8 +22,12 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
-p {padding: 0px;}
+p {padding: 0;}
 
+main {
+    max-width: 840px;
+  }
+  
 aside {
     width: 20cm;
     margin: 1cm;
