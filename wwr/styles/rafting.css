@@ -1,0 +1,76 @@
+:root {
+    --heading-background-color: #1B6DB6;
+    --heading-text-color: brown;
+    --article-color: white;
+    --header-color: blue;
+    --accent-color: #94d2bd;
+}
+
+/* title font and color */
+h1 {
+    font-family: 'Smooch Sans', serif;
+    font-size: 4rem;
+    color: var(--heading-text-color);
+}
+
+/* title font and color */
+h2 {
+    font-family: 'Instrument Serif', serif;
+    font-size: 2rem;
+    color: var(--header-color);
+}
+
+/* title font and color for text below images */
+h3 {
+    font-size: small;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+/* Remove underlines from hyperlinks */
+aside {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.hero-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+	top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero article {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: 90%;
+    bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    color: var(--article-color);
+    border-radius: 10px;
+}
+
+.hero article img {
+    position: relative;
+    float: right;
+    margin-left: 20px;
+  }
+
+.hero article p {
+    font-size: 1.2rem;
+}
+
