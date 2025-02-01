@@ -1,76 +1,128 @@
 :root {
-    --heading-background-color: #1B6DB6;
-    --heading-text-color: brown;
-    --article-color: white;
-    --header-color: blue;
-    --accent-color: #94d2bd;
+    --heading-background-color: #FFCBCB;
+	--section-header-background-color: #999999;
+	--section-background-color: #f1f1f1;
 }
 
-/* title font and color */
-h1 {
-    font-family: 'Smooch Sans', serif;
-    font-size: 4rem;
-    color: var(--heading-text-color);
+.header {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	background-color: var(--heading-background-color);
+	padding: 10px;
+}
+.header-image {
+	justify-self: start;
+	margin-left: 400px; 
+}
+.nav-bar {
+	justify-self: end;
+	margin-right: 400px;
+}
+.nav-bar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.nav-bar li {
+	display: inline;
+	margin: 0 10px;
+}
+.nav-bar a {
+	text-decoration: none;
+	color: #000;
+}
+.nav-bar a:hover {
+	text-decoration: underline;
 }
 
-/* title font and color */
-h2 {
+.rafting-row {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Horizontally centers the images within the container */
+    gap: 20px; /* Optional: Adds space between the images */
+	border: 2px solid #000;
+	padding: 20px;
+	height: auto;
+	background-color: var(--section-background-color);
+}
+
+.rafting-row img {
+    max-width: 200px; /* Sets a maximum width for each image */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.rafting-text {
     font-family: 'Instrument Serif', serif;
+    font-size: 1rem;
+	background-color: var(--section-background-color);
+}
+
+.history-row {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Horizontally centers the images within the container */
+    gap: 20px; /* Optional: Adds space between the images */
+	background-color: var(--section-background-color);
+}
+
+.history-row img {
+    max-width: 200px; /* Sets a maximum width for each image */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.text-history {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1rem;
+}
+
+.image-row {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Horizontally centers the images within the container */
+    gap: 20px; /* Optional: Adds space between the images */
+	background-color: var(--section-background-color);
+}
+
+.image-text-row {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Horizontally centers the images within the container */
+    gap: 160px; /* Optional: Adds space between the images */
+    font-family: 'Instrument Serif', serif;
+    font-size: 1rem;
+}
+
+.image-row img {
+    max-width: 250px; /* Sets a maximum width for each image */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.image-header {
+    display: flex; /* Enables flexbox layout */
+    font-family: 'Instrument Serif', serif;
+    font-size: 0.4rem;
+}
+
+h1 {
     font-size: 2rem;
-    color: var(--header-color);
+    font-family: Acme, Arial, sans-serif;
+    flex-direction:column;
+    flex-wrap: wrap
 }
 
-/* title font and color for text below images */
-h3 {
-    font-size: small;
-    margin-top: 0%;
-    margin-bottom: 0%;
+h2 {
+    display: grid;
+    text-align: center;
+	background-color: var(--section-header-background-color);
 }
 
-/* Remove underlines from hyperlinks */
-aside {
-    text-decoration: none;
+.footer {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	background-color: var(--heading-background-color);
+	padding: 10px;
 }
-
-.hero {
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+.footer-text {
+	text-align: center;
 }
-
-.hero-img {
-    display: block;
-    width: 100%;
-    height: auto;
+.footer-image {
+	justify-self: end;
 }
-
-.hero h1 {
-    position: absolute;
-	top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.hero article {
-    position: absolute;
-    top: 70%;
-    left: 5%;
-    width: 90%;
-    bottom: 5%;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    color: var(--article-color);
-    border-radius: 10px;
-}
-
-.hero article img {
-    position: relative;
-    float: right;
-    margin-left: 20px;
-  }
-
-.hero article p {
-    font-size: 1.2rem;
-}
-
