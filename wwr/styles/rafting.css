@@ -101,10 +101,9 @@
 }
 
 h1 {
-    font-size: 2rem;
-    font-family: Acme, Arial, sans-serif;
-    flex-direction:column;
-    flex-wrap: wrap
+    display: grid;
+    text-align: center;
+	background-color: var(--section-header-background-color);
 }
 
 h2 {
