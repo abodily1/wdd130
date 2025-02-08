@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us </title>
+    <meta name="description" content="WDD 130 week 05 project">
+    <meta name="author" content="Abrielle Bodily">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Header section -->
+    <header class="header">
+        <div class="header-image">
+            <img src="images/rapidslogos.png" alt="Logo" width="100" height="80">
+        </div>
+        <nav aria-label="1" class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Company Information</h2>
+            <p>Address: 1234 Imaginary Lane, Buena Vista, CO 81211</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@adventurerafting.com</p>
+            <div class="map">
+               <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2565.4244615777943!2d-106.11779426614905!3d38.838677249786656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1738899427955!5m2!1sen!2sus" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section>
+            <div class="image-row">
+                <img src="images/riverguide.jpg" alt="Smiling Employee">
+                <img src="images/Rafting_photographer.webp" alt="Employee that is happy">
+                <img src="images/Happy employee.jpg" alt="Happy Employee">
+            </div>
+            <div class="image-text-row">
+                <h4>Sarah Johnson, River Guide</h4>
+                <h4>Emily Davis, Rafting Photographer</h4>
+                <h4>Michael Brown, Chief Executive Officer</h4>
+            </div>
+        </section>
+        <form>
+            <fieldset>
+                <legend>User Input Form</legend>
+                <div class="form-item">
+                    <label for="username">Name:</label><br>
+                    <input type="text" id="username" name="username" size="35" required><br><br>
+                    <label for="useremail">Email:</label><br>
+                    <input type="email" id="useremail" name="useremail" size="35" required><br><br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form item">
+                    <input type="radio" id="general-inquiry" name="purpose" value="general-inquiry">
+                    <label for="inquiry">General Inquiry</label>
+                    <br>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
+                    <br>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+
+                </div>
+                <div class="form item">
+                    <label for="textbox">Please enter your questions:</label>
+                    <input type="text" id="text" name="userinput" size="100">
+                </div>
+                <div class="form-item">
+                    <label for="pet">Please subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+            </fieldset>
+            <button type="submit"> Submit</button>
+        </form>
+    </main>
+	<!-- Footer section -->
+   <footer class="footer">
+        <div class="footer-text">
+            <p>© 2025 White Water Rafting | Abrielle Bodily </p>
+        </div>
+            <a href="https://app.moqups.com/d6G9WuwHQOAhmGl9PvwQX7YtgEP4WpiP/view/page/ad64222d5">Wireframe Link</a>
+        <div class="footer-image">
+			<a href="https://facebook.com">
+				<img src="images/facebook.png" alt="Footer Image" width="50" height="50">
+            </a>
+			<a href="https://instagram.com">
+				<img src="images/instagram.png" alt="Footer Image" width="50" height="50">
+			</a>
+			<a href="https://twitter.com">
+				<img src="images/twitter.png" alt="Footer Image" width="50" height="50">
+			</a>
+        </div>
+    </footer>
+</body>
+</html>
