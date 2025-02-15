@@ -125,3 +125,65 @@ h2 {
 .footer-image {
 	justify-self: end;
 }
+
+.hero{
+	position:relative;
+	padding-bottom:20px;
+ }
+
+.hero img {
+    display:block;
+    width:100%;
+    height: auto;
+}
+
+.hero h3 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.emp{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	grid-gap:30px;
+	max-width: 1000px;
+   }
+
+   .emp figure{
+	border: 01px solid #33658A;
+	margin:0 auto;
+   }
+   .emp figure img{
+	max-width: 220px;
+   }
+
+   .emp figure figcaption{
+	text-align: center;
+   }
+
+   .cell{
+	display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Horizontally centers the images within the container */
+    gap: 20px; /* Optional: Adds space between the images */
+	background-color: var(--section-background-color);
+   }
+
+   .form-item{
+	width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+   }
+
+   .button-submit {
+    width: 125px;
+    border-radius: 0.5rem;
+}
